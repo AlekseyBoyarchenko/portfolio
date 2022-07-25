@@ -1,0 +1,93 @@
+.present {
+  width: 280px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin-bottom: -13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+  }
+}
+
+.present__wrapper {
+  min-height: 289px;
+  background-image: url("../img/present-bg-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-color: #68b738;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/present-bg-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 199px;
+    background-image: url("../img/present-bg-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present-bg-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 289px;
+    background-image: url("../img/present-bg-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present-bg-desktop@2x.jpg");
+    }
+  }
+}
+
+.present__proviso {
+  margin: 0;
+  position: relative;
+  padding-top: 186px;
+  padding-bottom: 43px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    vertical-align: middle;
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 184px 43px 42px 40px;
+    text-align: center;
+  }
+}
+
+.present__proviso::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/present-image-mobile.svg");
+  top: 65px;
+  left: calc(50% - (57px / 2));
+  width: 57px;
+  height: 61px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/present-image-tablet.svg");
+    top: 63px;
+    left: 88px;
+    width: 58px;
+    height: 63px;
+  }
+}

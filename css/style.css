@@ -192,17 +192,7 @@ legend, td, th {
 .about__title::after, .contacts__title::after, .contacts__title::before, .education__title::after, .education__title::before {
     margin-left: 10px;
     margin-right: 5%}
-.about__photo-wrapper {
-    line-height: 0;
-    border: 20px solid #fff;
-    box-shadow: 0 3px 6px 3px rgba(122, 122, 122, .3);
-    box-sizing: content-box;
-}
-.about__photo-wrapper img {
-    width: 240px;
-    height: 180px;
-    box-shadow: 0 0 13px 3px rgba(122, 12, 122, .3);
-}
+
 .about__info-container {
     display: flex;
     flex-direction: column;
@@ -884,13 +874,7 @@ legend, td, th {
 .about__title {
     order: -13;
 }
-.about__photo-wrapper {
-    margin-left: 0;
-    margin-right: 5%}
-.about__photo-wrapper img {
-    width: 300px;
-    height: 225px;
-}
+
 .about__info-container {
     order: -1;
 }
@@ -1153,15 +1137,7 @@ legend, td, th {
     -ms-grid-row-align: center;
     align-items: center;
 }
-.about__photo-wrapper {
-    order: -2;
-    margin-left: 5%;
-    margin-right: 0;
-}
-.about__photo-wrapper img {
-    width: 500px;
-    height: 375px;
-}
+
 .about__info-container {
     padding-left: 0;
     padding-right: 5%;

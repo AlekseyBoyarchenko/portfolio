@@ -1,0 +1,129 @@
+.slider__toggles {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin: -4px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 104px;
+  }
+}
+
+.slider__toggle {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
+    padding-bottom: 1px;
+    font-size: 20px;
+    line-height: 29px;
+    display: inline-block;
+    margin-top: 5px;
+
+    &:hover {
+      opacity: 1;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      opacity: 1;
+      border-bottom: none;
+    }
+  }
+}
+
+.slider__item {
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -10px;
+  }
+}
+
+.slider__range {
+  padding: 0;
+  margin: 0 18px 2px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 83px;
+  height: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+    height: 6px;
+    border: none;
+    background-color: #cdcdcd;
+    margin: 0 24px;
+    display: inline-block;
+  }
+}
+
+.slider__toggle-before-after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+  top: 5px;
+  left: 104px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    top: 7px;
+    left: calc(50% - 17px);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      cursor: pointer;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+      top: calc(50% - 3px);
+      left: calc(50% - 4px);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #68b738;
+  }
+}
